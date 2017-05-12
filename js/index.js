@@ -21,16 +21,16 @@ function quadraticEq(a, b, c){
     
    
     if (d > 0){
-        var x1 = (- b - Math.sqrt(d)) / (2 * a)
-        result = "x1 =" + x1
-        var x2 = (-b + Math.sqrt(d)) / (2 * a)
-         result += "x2 =" + x2}
+        var x1 = (- b - Math.sqrt(d)) / (2 * a);
+        result = "x1 =" + x1;
+        var x2 = (-b + Math.sqrt(d)) / (2 * a);
+         result += "x2 =" + x2};
     
     if (d === 0){
-        var x_root1 = (-(b * b) / (2 * a))
-        result = "x_root1 =" + x_root1
-        var x_root2 = (-(b * b) / (2 * a))
-        result += "x_root2 =" + x_root2}    
+        var x_root1 = (-(b * b) / (2 * a));
+        result = "x_root1 =" + x_root1;
+        var x_root2 = (-(b * b) / (2 * a));
+        result += "x_root2 =" + x_root2} ;   
     return result;
     
     }
