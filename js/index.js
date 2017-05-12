@@ -1,19 +1,25 @@
 alert("Lets solve a quadratic equation and find X");
 var a = Number(prompt("Enter value of A but not 0"));
-// if (a === 0) {
-// alert("it is not a quadratic equation")}
-// else{
-// var a = Number(prompt("Enter value of A"))}
 var b = Number(prompt("Enter value of B"));
 var c = Number(prompt("Enter value of C"));
-
+if (a === 0){
+    document.write('this is not quadratic equation. This is a linean equation.');
+}
+else{
+    var result = quadraticEq(a, b, c);
+    document.write(result);
+}
 
 
 function quadraticEq(a, b, c){
    var d = b * b - 4 * a * c;
+   var result;
+   
     if (d < 0){
-        result = "there is no solvings in this situation because d<0";
+        result = "there is no way solve an equation because d<0";
     }
+    
+   
     if (d > 0){
         var x1 = (- b - Math.sqrt(d)) / (2 * a)
         result = "x1 =" + x1
@@ -29,6 +35,6 @@ function quadraticEq(a, b, c){
     
     }
     
-    var result = quadraticEq(a, b, c);
-    document.write(result);
-
+    
+    
+   
