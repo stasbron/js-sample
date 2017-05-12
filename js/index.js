@@ -3,7 +3,7 @@ var a = Number(prompt("Enter value of A but not 0"));
 var b = Number(prompt("Enter value of B"));
 var c = Number(prompt("Enter value of C"));
 if (a === 0){
-    document.write('this is not quadratic equation. This is a linean equation.');
+    document.write('this is not quadratic equation. This is a linean equation, because A can not be equal 0 in this case.');
 }
 else{
     var result = quadraticEq(a, b, c);
@@ -16,7 +16,7 @@ function quadraticEq(a, b, c){
    var result;
    
     if (d < 0){
-        result = "there is no way solve an equation because d<0";
+        result = "there is no way to solve an equation because d<0";
     }
     
    
